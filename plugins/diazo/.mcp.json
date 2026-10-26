@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "diazo": {
+      "command": "diazo",
+      "args": [
+        "channel"
+      ]
+    }
+  }
+}

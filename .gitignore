@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+
+# Claude Code writes the mods API types here when a plugin is loaded with --plugin-dir.
+plugins/*/tsconfig.json
+plugins/*/.claude-plugin/types/

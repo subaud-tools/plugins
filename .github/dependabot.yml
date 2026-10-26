@@ -1,0 +1,13 @@
+# tools-common renders every plugin here; take each release as a PR. Its CI
+# fails while a plugin differs from the new render: regenerate with
+# CLAUDEPLUGIN_UPDATE=1 go test ./... and commit the result on the PR.
+version: 2
+updates:
+  - package-ecosystem: gomod
+    directory: /
+    schedule:
+      interval: weekly
+    allow:
+      - dependency-name: github.com/subaud-tools/tools-common*
+    commit-message:
+      prefix: "chore(deps)"

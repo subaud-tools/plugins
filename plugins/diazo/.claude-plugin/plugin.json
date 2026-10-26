@@ -1,0 +1,17 @@
+{
+  "name": "diazo",
+  "displayName": "diazo",
+  "description": "Plan with an agent on a page in the browser; what you decide there lands in the session that opened the folder.",
+  "author": {
+    "name": "Court Schuett"
+  },
+  "homepage": "https://diazo.tools",
+  "repository": "https://github.com/subaud-tools/plugins",
+  "license": "MIT",
+  "keywords": [
+    "planning",
+    "design",
+    "spec"
+  ],
+  "mcpServers": "./.mcp.json"
+}

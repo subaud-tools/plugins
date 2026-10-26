@@ -1,0 +1,14 @@
+{
+  "name": "subaud-tools",
+  "owner": {
+    "name": "Court Schuett"
+  },
+  "description": "Claude Code plugins for the subaud .tools family. Each plugin needs its tool installed from the tool's site.",
+  "plugins": [
+    {
+      "name": "diazo",
+      "source": "./plugins/diazo",
+      "description": "The planning page: the agent drives the understanding, the decisions with their options and mockups, the spec and its plans in the browser while you decide there. Bundles diazo's tools and the mod that delivers your actions on the page into this session."
+    }
+  ]
+}
