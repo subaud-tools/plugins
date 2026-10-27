@@ -8,7 +8,7 @@
   },
   "homepage": "https://muster.tools",
   "repository": "https://github.com/subaud-tools/plugins",
-  "license": "BUSL-1.1",
+  "license": "MIT",
   "keywords": [
     "agents",
     "coordination",

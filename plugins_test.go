@@ -35,7 +35,7 @@ func TestPluginsAreCurrent(t *testing.T) {
 			AuthorURL:   "https://muster.tools",
 			Homepage:    "https://muster.tools",
 			Repository:  "https://github.com/subaud-tools/plugins",
-			License:     "BUSL-1.1",
+			License:     "MIT",
 			Keywords:    []string{"agents", "coordination", "tmux", "messaging"},
 		},
 		{
@@ -48,7 +48,7 @@ func TestPluginsAreCurrent(t *testing.T) {
 			AuthorURL:   "https://galley.tools",
 			Homepage:    "https://galley.tools",
 			Repository:  "https://github.com/subaud-tools/plugins",
-			License:     "BUSL-1.1",
+			License:     "MIT",
 			Keywords:    []string{"review", "markdown", "writing", "editing"},
 		},
 		{
@@ -107,5 +107,17 @@ func TestPluginsAreCurrent(t *testing.T) {
 		t.Run(s.Name, func(t *testing.T) {
 			claudeplugin.AssertCurrent(t, filepath.Join("plugins", s.Name), s)
 		})
+	}
+}
+
+// No plugin carries a skill: each tool's skill is embedded in its binary and
+// installed with `<tool> skills install`, so the plugin holds no second copy.
+func TestNoPluginCarriesASkill(t *testing.T) {
+	dirs, err := filepath.Glob(filepath.Join("plugins", "*", "skills"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, d := range dirs {
+		t.Errorf("%s: a plugin carries no skill; the tool's `skills install` installs it", d)
 	}
 }

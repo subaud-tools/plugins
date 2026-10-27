@@ -18,7 +18,7 @@
     {
       "name": "galley",
       "source": "./plugins/galley",
-      "description": "Review a Markdown document in the browser while an agent revises it. The reviewer edits directly and leaves instructions on passages; Revise sends the round; the agent edits the file itself and its changes land. Every round is a version. Bundles galley's tools, the mod that delivers rounds into this session, and the skill that teaches the loop."
+      "description": "Review a Markdown document in the browser while an agent revises it. The reviewer edits directly and leaves instructions on passages; Revise sends the round; the agent edits the file itself and its changes land. Every round is a version. Bundles galley's tools and the mod that delivers rounds into this session; `galley skills install` installs the skill that teaches the loop."
     },
     {
       "name": "casebook",

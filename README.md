@@ -14,7 +14,7 @@ your `PATH` does nothing.
 | --- | --- | --- |
 | `diazo` | Plan and design with an agent on a page in the browser. | [diazo.tools](https://diazo.tools) |
 | `muster` | Mail on the muster bus starts a turn in the session it was sent to. | [muster.tools](https://muster.tools) |
-| `galley` | Review a Markdown document in the browser while an agent revises it; carries the `reviewing-a-document` skill. | [galley.tools](https://galley.tools) |
+| `galley` | Review a Markdown document in the browser while an agent revises it; its skill comes from `galley skills install`. | [galley.tools](https://galley.tools) |
 | `casebook` | Decide the fate of every repo, pull request, issue, branch and worktree from casebook's page. | [casebook.tools](https://casebook.tools) |
 | `cull` | Judge a project's tests with Jev; your answers from cull's review page land in the session. | [tackle.tools](https://tackle.tools) |
 | `imprint` | npm publishing, trusted publishers and deprecation, one step at a time. | [tackle.tools](https://tackle.tools) |
@@ -35,7 +35,9 @@ Install any other plugin the same way, as `<plugin>@subaud-tools`.
 
 Every plugin's manifest, `.mcp.json` and mod are rendered by
 [tools-common](https://github.com/subaud-tools/tools-common)'s `claudeplugin`
-package, not written by hand; galley's skill is the one file written here. `plugins_test.go` holds each plugin's spec and
+package, not written by hand. No plugin carries a skill: a tool's skill is
+embedded in its binary and installed with `<tool> skills install` (galley's
+`reviewing-a-document`, diazo's `diazo`). `plugins_test.go` holds each plugin's spec and
 fails when a committed plugin differs from the render; regenerate with
 `CLAUDEPLUGIN_UPDATE=1 go test ./...`. `just verify` runs that test and
 Claude Code's own `claude plugin validate` on the marketplace and every
@@ -43,6 +45,5 @@ plugin, exactly as CI does.
 
 ## License
 
-MIT, for the plugin files in this repo, except where a plugin's
-`plugin.json` names another license (muster and galley: BUSL-1.1, as their
-tools). Each tool a plugin runs has its own license.
+MIT, for every file in this repo, every plugin included. Each tool a plugin
+runs has its own license.
