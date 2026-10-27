@@ -9,6 +9,36 @@
       "name": "diazo",
       "source": "./plugins/diazo",
       "description": "The planning page: the agent drives the understanding, the decisions with their options and mockups, the spec and its plans in the browser while you decide there. Bundles diazo's tools and the mod that delivers your actions on the page into this session."
+    },
+    {
+      "name": "muster",
+      "source": "./plugins/muster",
+      "description": "Agents in different sessions send each other messages and tasks over the muster bus. Bundles muster_channel_status and the mod that starts a turn in this session when mail arrives for it. The bus's own tools come from muster mcp, registered separately."
+    },
+    {
+      "name": "galley",
+      "source": "./plugins/galley",
+      "description": "Review a Markdown document in the browser while an agent revises it. The reviewer edits directly and leaves instructions on passages; Revise sends the round; the agent edits the file itself and its changes land. Every round is a version. Bundles galley's tools and the mod that delivers rounds into this session; `galley skills install` installs the skill that teaches the loop."
+    },
+    {
+      "name": "casebook",
+      "source": "./plugins/casebook",
+      "description": "Keep a record of what should happen to every repo, pull request, issue, branch and worktree, and work through it with an agent from casebook's page. Bundles casebook's tools and the mod that delivers the user's messages into this session."
+    },
+    {
+      "name": "cull",
+      "source": "./plugins/cull",
+      "description": "Judge a project's automated tests with Jev and remove the ones that don't earn their place; Court reviews only what Jev is unsure about, on cull's review page. Bundles cull's tools and the mod that delivers Court's answers into this session."
+    },
+    {
+      "name": "imprint",
+      "source": "./plugins/imprint",
+      "description": "Guides npm package work: logging in, publishing a tarball, setting or moving a package's trusted publisher, deprecating a package and confirming a CI release, one npm step at a time. Bundles imprint's tools and the mod that delivers each step's progress into this session."
+    },
+    {
+      "name": "sift",
+      "source": "./plugins/sift",
+      "description": "Audit the instruction files coding agents read and recommend a revised version of each; the user accepts, edits or rejects each file on sift's review page. Bundles sift's tools and the mod that delivers the user's decisions into this session."
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "name": "galley",
+  "displayName": "galley",
+  "description": "Review documents in the browser; rounds land in the session that wrote them.",
+  "author": {
+    "name": "Court Schuett",
+    "url": "https://galley.tools"
+  },
+  "homepage": "https://galley.tools",
+  "repository": "https://github.com/subaud-tools/plugins",
+  "license": "MIT",
+  "keywords": [
+    "review",
+    "markdown",
+    "writing",
+    "editing"
+  ],
+  "mcpServers": "./.mcp.json"
+}
