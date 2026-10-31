@@ -39,6 +39,11 @@
       "name": "sift",
       "source": "./plugins/sift",
       "description": "Audit the instruction files coding agents read and recommend a revised version of each; the user accepts, edits or rejects each file on sift's review page. Bundles sift's tools and the mod that delivers the user's decisions into this session."
+    },
+    {
+      "name": "muda",
+      "source": "./plugins/muda",
+      "description": "Find where delivery pipelines waste time and fix it with evidence; the agent posts each finding to muda's page, and you answer there. Bundles muda's tools and the mod that delivers your answers into this session; `muda skills install` installs the skills."
     }
   ]
 }
