@@ -1,0 +1,19 @@
+{
+  "name": "muda",
+  "displayName": "muda",
+  "description": "Find and fix delivery waste with evidence; the user's answers from muda's page land in the session that owns the project.",
+  "author": {
+    "name": "Court Schuett",
+    "url": "https://muda.tools"
+  },
+  "homepage": "https://muda.tools",
+  "repository": "https://github.com/subaud-tools/plugins",
+  "license": "MIT",
+  "keywords": [
+    "ci",
+    "delivery",
+    "waste",
+    "review"
+  ],
+  "mcpServers": "./.mcp.json"
+}

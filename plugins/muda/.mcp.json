@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "muda": {
+      "command": "muda",
+      "args": [
+        "channel"
+      ]
+    }
+  }
+}

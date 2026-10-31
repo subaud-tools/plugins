@@ -103,6 +103,19 @@ func TestPluginsAreCurrent(t *testing.T) {
 			License:     "MIT",
 			Keywords:    []string{"github", "triage", "branches", "worktrees"},
 		},
+		{
+			Name:        "muda",
+			DisplayName: "muda",
+			Bin:         "muda",
+			ServerName:  "muda",
+			Description: "Find and fix delivery waste with evidence; the user's answers from muda's page land in the session that owns the project.",
+			Author:      "Court Schuett",
+			AuthorURL:   "https://muda.tools",
+			Homepage:    "https://muda.tools",
+			Repository:  "https://github.com/subaud-tools/plugins",
+			License:     "MIT",
+			Keywords:    []string{"ci", "delivery", "waste", "review"},
+		},
 	} {
 		t.Run(s.Name, func(t *testing.T) {
 			claudeplugin.AssertCurrent(t, filepath.Join("plugins", s.Name), s)
