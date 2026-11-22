@@ -9,8 +9,9 @@ import (
 
 // Each plugin is rendered by tools-common, not written by hand: its manifest,
 // the .mcp.json that runs `<tool> channel` for the tools, and the mod that
-// runs `<tool> watch` and starts a turn with each event. Regenerate with
-// CLAUDEPLUGIN_UPDATE=1 go test ./...
+// runs `<tool> watch` and starts a turn with each event. creel has no page and
+// no events, so its plugin has no mod (NoMod): the manifest and the .mcp.json
+// only. Regenerate with CLAUDEPLUGIN_UPDATE=1 go test ./...
 func TestPluginsAreCurrent(t *testing.T) {
 	for _, s := range []claudeplugin.Spec{
 		{
@@ -115,6 +116,20 @@ func TestPluginsAreCurrent(t *testing.T) {
 			Repository:  "https://github.com/subaud-tools/plugins",
 			License:     "MIT",
 			Keywords:    []string{"ci", "delivery", "waste", "review"},
+		},
+		{
+			Name:        "creel",
+			DisplayName: "creel",
+			Bin:         "creel",
+			ServerName:  "creel",
+			NoMod:       true,
+			Description: "The agent asks you for a secret by name in a masked popup; the value goes into the project's .env file without entering the conversation.",
+			Author:      "Court Schuett",
+			AuthorURL:   "https://tackle.tools",
+			Homepage:    "https://tackle.tools",
+			Repository:  "https://github.com/subaud-tools/plugins",
+			License:     "MIT",
+			Keywords:    []string{"secrets", "env", "tmux"},
 		},
 	} {
 		t.Run(s.Name, func(t *testing.T) {

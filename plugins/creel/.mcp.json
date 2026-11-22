@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "creel": {
+      "command": "creel",
+      "args": [
+        "channel"
+      ]
+    }
+  }
+}
