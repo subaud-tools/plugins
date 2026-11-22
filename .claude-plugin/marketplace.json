@@ -44,6 +44,11 @@
       "name": "muda",
       "source": "./plugins/muda",
       "description": "Find where delivery pipelines waste time and fix it with evidence; the agent posts each finding to muda's page, and you answer there. Bundles muda's tools and the mod that delivers your answers into this session; `muda skills install` installs the skills."
+    },
+    {
+      "name": "creel",
+      "source": "./plugins/creel",
+      "description": "The agent asks you for a secret by name in a masked popup in your tmux pane; the value goes into the project's .env file and never enters the conversation. Bundles creel's one tool, creel_request, and no mod: creel has no page."
     }
   ]
 }

@@ -19,6 +19,7 @@ your `PATH` does nothing.
 | `cull` | Judge a project's tests with Jev; your answers from cull's review page land in the session. | [tackle.tools](https://tackle.tools) |
 | `imprint` | npm publishing, trusted publishers and deprecation, one step at a time. | [tackle.tools](https://tackle.tools) |
 | `sift` | Audit agent instruction files; your decisions from sift's review page land in the session. | [tackle.tools](https://tackle.tools) |
+| `creel` | The agent asks you for a secret in a masked popup; the value goes into the project's `.env` without entering the conversation. A tool only, with no mod: creel has no page. | [tackle.tools](https://tackle.tools) |
 
 ## Add the marketplace
 
